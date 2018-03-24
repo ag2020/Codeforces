@@ -11,7 +11,7 @@ public class ProblemOne {
 	}
 	
 	public static void run() {
-		InputReader2 ir = new InputReader2(System.in);
+		InputReader ir = new InputReader(System.in);
 		int n = ir.nextInt();
 		String s = ir.next();
 		for (int i = 0; i < n - 1; i++) {
@@ -34,12 +34,12 @@ public class ProblemOne {
 	}
 }
 
-class InputReader2 {
+class InputReader {
 	
 	public BufferedReader br;
     public StringTokenizer st;
     
-	public InputReader2(InputStream is) {
+	public InputReader(InputStream is) {
         br = new BufferedReader(new InputStreamReader(is), 32768);
         st = null;
     }
