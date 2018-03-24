@@ -11,7 +11,7 @@ public class ProblemTwo {
 	}
 	
 	public static void run() {
-		InputReader3 ir = new InputReader3(System.in);
+		InputReader ir = new InputReader(System.in);
 		int n = ir.nextInt();
 		int m = ir.nextInt();
 		String s;
@@ -54,12 +54,12 @@ public class ProblemTwo {
 	}
 }
 
-class InputReader3 {
+class InputReader {
 	
 	public BufferedReader br;
     public StringTokenizer st;
     
-	public InputReader3 (InputStream is) {
+	public InputReader (InputStream is) {
         br = new BufferedReader(new InputStreamReader(is), 32768);
         st = null;
     }
